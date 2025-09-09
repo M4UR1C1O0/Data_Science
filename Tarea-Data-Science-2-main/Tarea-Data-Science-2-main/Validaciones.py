@@ -1,0 +1,1 @@
+# Minimo 2 valores deben estar en la validación, 'no este vacio' y que vengan en entero positivo y maximo 1 decimal xd
