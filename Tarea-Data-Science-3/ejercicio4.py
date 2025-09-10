@@ -7,3 +7,4 @@ from Limpieza import df
 #- Haz un boxplot de los PS por tipo principal (Tipo 1).
 #- Grafica la distribución de la defensa usando un diagrama de violín.
 
+print(df)
