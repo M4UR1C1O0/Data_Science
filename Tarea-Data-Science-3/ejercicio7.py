@@ -17,7 +17,6 @@ import seaborn as sns
 #2. ¿Hay correlación entre ataque y velocidad? Calcula el coeficiente de correlación.
 
 #3. ¿Qué tan dispersos están los PS dentro de cada tipo? (compara la desviación estándar de PS por tipo)
-
 #Calculamos la desviacion estandar de PS por tipo y luego creamos un diagrama de dispersion
 Desviacion_estandar_ps = df.groupby("Tipo 1")["PS"].std().round(1)
 plt.figure(figsize=(10,5))
