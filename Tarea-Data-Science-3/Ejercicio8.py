@@ -9,5 +9,4 @@
 #stats mas bajas en comparacion.
 #chansey es un pokemon especializado en los puntos de salud teniendo este 250 pero todos sus demas stast los tiene bastante bajos siendo 5 en ataque 5 en def y 50 en velocidad
 #jolteon es un pokemon especializado en velocidad teniendo este 130 pero sus demas stats son bastante bajos siendo 65 en ataque 60 en defensa y 65 en ps, electrode tambien siendo otro ejemplo
-#
-#
+#onix es un pokemon especializado en defensa teniendo este 160 pero sus demas stats son bastante bajos siendo 45 en ataque 30 en velocidad y 35 en ps, cloyster tambien siendo otro ejemplo
