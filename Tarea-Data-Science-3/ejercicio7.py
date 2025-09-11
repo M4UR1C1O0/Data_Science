@@ -12,7 +12,11 @@ import seaborn as sns
 #- Identifica posibles outliers en los valores de ataque y PS usando boxplots.#
 
 #1. ¿Existen tipos de Pokémon que tienden a tener mayor ataque o defensa? Justifica con estadísticas.
-
+comparativa = df.groupby("Tipo 1")[["Ataque","Defensa"]].agg(["mean","median"]).round(1)#agg para usar las funciones mean y median a la vez
+print(comparativa)
+#si hay tipos de pokemon que pueden tender a tener mayot ataque o defensa, como puede ser el caso de los pokemon de tipo lucha que promedio de ataque es de 102.9 pero una defensa mas baja
+#otro caso seria los pokemon tipo roca que tiene un mayor promedio en la defensa, siendo estos los dos tipos que mas resaltan en defensa y ataque, en cuanto a los demas tipos se puede decir que 
+#tienen un promedio mas balanceado entre ataque y defensa, igualmente tienes el tipo dragon con un buen promedio de ataque y el tipo tierra siendo otro buen tipo en defensa.
 
 #2. ¿Hay correlación entre ataque y velocidad? Calcula el coeficiente de correlación.
 
