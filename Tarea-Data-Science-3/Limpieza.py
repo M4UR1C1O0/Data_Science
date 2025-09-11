@@ -44,5 +44,5 @@ for col in datos_numericos:
         print(f"La columna '{col}' tiene valores nulos, corregir")
         error = True
 
-print(df)
+#print(df)
 

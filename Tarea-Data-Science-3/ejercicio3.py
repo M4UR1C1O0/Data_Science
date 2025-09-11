@@ -17,3 +17,7 @@ doble_tipo = df[df["Tipo 2"] != "No tiene"]
 print("Pokemones de doble tipo: ", len(doble_tipo))
 
 #devisacion y rango
+rango = df["PS"].max() - df["PS"].min() #ps maximo - ps minimo chansey - digglet
+desviacion = round(df["PS"].std(),1) #desviacion estandar std
+
+print("Rango y desviacion de PS: ", rango, desviacion)
