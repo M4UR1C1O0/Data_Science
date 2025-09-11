@@ -33,3 +33,4 @@ plt.savefig('prueba.png')
 plt.show()
 
 #boxplot cajas tipo persentiles
+plt.b
