@@ -17,20 +17,22 @@ tipos_gen1 = ["Normal", "Fuego", "Agua", "Planta", "Eléctrico", "Hielo",
     "Lucha", "Veneno", "Tierra", "Volador", "Psíquico",
     "Bicho", "Roca", "Fantasma", "Dragón","No tiene"]
 
-
 datos_numericos = ["Ataque", "Defensa", "Velocidad", "PS"]
-
 
 #Rellena los vacios
 df ["Tipo 2"] = df["Tipo 2"].fillna("No tiene")
+
 #Eliminar Tipo 2 de pokemon de tipos que aun no existian 
 df["Tipo 2"] = df["Tipo 2"].apply(lambda x: x if x in tipos_gen1 else "No tiene")
+
 #Correccion de nombre de nidoran
 df["Nombre"] = df["Nombre"].replace({"Nidoran♂": "NidoranM","Nidoran♀": "NidoranF"})
+
 #Eliminar acentos o normalizar
 df["Nombre"] = df["Nombre"].apply(unidecode)
 df["Tipo 1"] = df["Tipo 1"].apply(unidecode)
 df["Tipo 2"] = df["Tipo 2"].apply(unidecode)
+
 #Comprobor tipos de datos aunque pandas lo hace solo
 #df["Ataque"] = df["Ataque"].astype(int)
 #df["Defensa"] = df["Defensa"].astype(int)
