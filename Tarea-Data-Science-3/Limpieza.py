@@ -2,16 +2,22 @@ import pandas as pd
 import numpy as np 
 from unidecode import unidecode
 
+#Definimos donde se ubica el archivo "pokemon_primera_gen.csv" para leer lo bien
 patharchivo = "/workspaces/Data_Science/Tarea-Data-Science-3/pokemon_primera_gen.csv"
+
 #Mostrar todos los datos en la terminal
 pd.set_option("display.max_rows", None)   
 pd.set_option("display.max_columns", None)  
 
+#Lectura del archivo .csv
 df = pd.read_csv(patharchivo)
 
+#Definimos los tipos de pokemon y guardamos en una variable "tipos_gen1"
 tipos_gen1 = ["Normal", "Fuego", "Agua", "Planta", "Eléctrico", "Hielo",
     "Lucha", "Veneno", "Tierra", "Volador", "Psíquico",
     "Bicho", "Roca", "Fantasma", "Dragón","No tiene"]
+
+
 datos_numericos = ["Ataque", "Defensa", "Velocidad", "PS"]
 
 
@@ -44,5 +50,5 @@ for col in datos_numericos:
         print(f"La columna '{col}' tiene valores nulos, corregir")
         error = True
 
-print(df)
+#print(df)
 
