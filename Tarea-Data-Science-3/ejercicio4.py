@@ -1,5 +1,4 @@
 from Limpieza import df
-
 #4. Visualización de datos
 #-------------------------
 #- Haz un histograma de los valores de ataque.
