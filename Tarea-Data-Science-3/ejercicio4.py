@@ -1,7 +1,5 @@
 from Limpieza import df
 import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
 import seaborn as sns
 
 #4. Visualización de datos
@@ -14,6 +12,7 @@ import seaborn as sns
 tipos = ["Normal", "Fuego", "Agua", "Planta", "Electrico", "Hielo",
     "Lucha", "Veneno", "Tierra", "Volador", "Psiquico",
     "Bicho", "Roca", "Fantasma", "Dragon",]
+    
 datos = [df[df["Tipo 1"] == tipo]["PS"] for tipo in tipos]
 
 #1. Utilizamos .hist para histogramas, .scatter para dispersion, .boxplot para cajas con persentiles y .violinplot para diagrama de violin

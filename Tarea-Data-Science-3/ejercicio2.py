@@ -1,4 +1,5 @@
 from Limpieza import df
+
 #2. Filtrado y selección
 #-----------------------
 #- Filtra todos los Pokémon de tipo "Fuego".
