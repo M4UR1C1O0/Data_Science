@@ -41,9 +41,10 @@ plt.figure(figsize=(10,5))
 plt.boxplot([df["Ataque"], df["PS"]], tick_labels=["Ataque", "PS"])
 plt.title('Boxplot de Ataque y PS de Pokemon de la Primera Generacion')
 plt.ylabel('Valores')
-plt.tight_layout()
+plt.tight_layout()#para que no se sobrepongan los textos
 plt.savefig('Boxplot Ataque y PS.png')
 
-
-#print(comparativa)
-#print(f"El coeficiente de correlacion entre ataque y velocidad es: {correlacion.round(1)}")
+#Mostramos los resultados
+print(f"Si existen tipos de Pokemon que tienden a tener mayor ataque o defensa: \n{comparativa}\n"
+      f"El coeficiente de correlacion entre ataque y velocidad es: {correlacion.round(1)}"
+      )
