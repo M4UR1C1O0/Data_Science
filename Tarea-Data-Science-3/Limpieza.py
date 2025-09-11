@@ -22,14 +22,9 @@ datos_numericos = ["Ataque", "Defensa", "Velocidad", "PS"]
 #Rellena los vacios
 df ["Tipo 2"] = df["Tipo 2"].fillna("No tiene")
 
-#Eliminar Tipo 2 de pokemon de tipos que aun no existian 
+#Eliminar Tipo 2 de pokemon de tipos que aun no existian y el tipo hada del pokemon especifico clefairy y clefable cambiandolo a tipo normal en este caso es especifico 
 df["Tipo 2"] = df["Tipo 2"].apply(lambda x: x if x in tipos_gen1 else "No tiene")
-
 df["Tipo 1"] = df["Tipo 1"].apply(lambda x: x if x in tipos_gen1 else "Normal")
-
-
-
-
 
 #Correccion de nombre de nidoran
 df["Nombre"] = df["Nombre"].replace({"Nidoran♂": "NidoranM","Nidoran♀": "NidoranF"})
