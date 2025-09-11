@@ -15,13 +15,11 @@ moda_ataque = df["Ataque"].mode()[0]#uso de mode para la moda y el 0 para que so
 
 #2. Mayor def y menos vel
 mayor_def = df["Defensa"].max()#uso de max para encontrar el valor mas grande
+menos_vel = df["Velocidad"].min()#uso de min para encontrar el valor mas pequeño
 
 #prueba 
-#mayor_def_pokemon = df.loc[df["Defensa"].idxmax()]["Nombre"] #encuentra el nombre del pokemon con mayor defensa
 Mayor_def_pokemon = df.loc[df["Defensa"].idxmax(), "Nombre"]
 Menor_vel_pokemon = df.loc[df["Velocidad"].idxmin(), "Nombre"]
-
-menos_vel = df["Velocidad"].min()#uso de min para encontrar el valor mas pequeño
 
 #3. Doble tipo
 doble_tipo = df[df["Tipo 2"] != "No tiene"]#buscamos todos aquellos que no tenga en segundo tipo "No tiene"
