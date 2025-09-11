@@ -19,6 +19,10 @@ print(comparativa)
 #tienen un promedio mas balanceado entre ataque y defensa, igualmente tienes el tipo dragon con un buen promedio de ataque y el tipo tierra siendo otro buen tipo en defensa.
 
 #2. ¿Hay correlación entre ataque y velocidad? Calcula el coeficiente de correlación.
+correlacion = df["Ataque"].corr(df["Velocidad"])#utilizamos la herramienta de corr para buscar la correlacion entre columnas numericas 
+print(f"El coeficiente de correlacion entre ataque y velocidad es: {correlacion.round(2)}")
+#debido al resultado arrojado es 0.2 se puede decir que no hay una relacion fuerte entre estos ya que esta demasiado cerca del 0 entonces con esto no se puede asegurar que haya una 
+#correlacion entre ataque y velocidad.
 
 #3. ¿Qué tan dispersos están los PS dentro de cada tipo? (compara la desviación estándar de PS por tipo)
 #Calculamos la desviacion estandar de PS por tipo y luego creamos un diagrama de dispersion
